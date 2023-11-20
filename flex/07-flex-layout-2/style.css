@@ -7,9 +7,14 @@ body {
 }
 
 .header {
+  font-size: 32px;
+  font-weight: 900;
   height: 72px;
   background: darkmagenta;
   color: white;
+  display: flex;
+  align-items: center;
+  padding-left: 16px;
 }
 
 .container {
@@ -25,11 +30,25 @@ body {
   flex: 0 0 auto;
 }
 
+ul {
+  list-style-type: none;
+  padding-left: 16px;
+}
+
+a {
+  font-size: 24px;
+  text-decoration: none;
+  color: white;
+}
+
 .content {
   padding: 32px;
+  width: 60vw;
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
+  align-content: center;
+  justify-content: baseline
 }
 
 .card {
@@ -37,15 +56,17 @@ body {
   box-shadow: 2px 4px 16px rgba(0,0,0,.06);
   border-radius: 4px;
   height: 400px;
+  flex: 0 0 350px;
   padding: 20px;
-  flex: 1;
-  min-width: 30%;
 }
 
 .footer {
   height: 72px;
   background: #eee;
   color: darkmagenta;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 
