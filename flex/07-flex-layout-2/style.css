@@ -7,13 +7,13 @@ body {
 }
 
 .header {
-  font-size: 32px;
-  font-weight: 900;
   height: 72px;
   background: darkmagenta;
   color: white;
   display: flex;
   align-items: center;
+  font-size: 32px;
+  font-weight: 900;
   padding-left: 16px;
 }
 
@@ -26,13 +26,18 @@ body {
   width: 300px;
   background: royalblue;
   box-sizing: border-box;
-  display: flex;
-  flex: 0 0 auto;
+  flex-shrink: 0;
+  padding: 16px;
 }
 
 ul {
   list-style-type: none;
-  padding-left: 16px;
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  margin-bottom: 16px;
 }
 
 a {
@@ -43,21 +48,26 @@ a {
 
 .content {
   padding: 32px;
-  width: 60vw;
   display: flex;
   flex-wrap: wrap;
+  /*MY SOLUTION*/
+  /*width: 60vw;
   gap: 30px;
   align-content: center;
-  justify-content: baseline
+  justify-content: baseline*/
 }
 
 .card {
   border: 1px solid #eee;
   box-shadow: 2px 4px 16px rgba(0,0,0,.06);
   border-radius: 4px;
-  height: 400px;
+  padding: 16px;
+  margin: 16px;
+  width: 300px;
+  /*MY SOLUTION*/
+  /*height: 400px;
   flex: 0 0 350px;
-  padding: 20px;
+  padding: 20px;*/
 }
 
 .footer {
